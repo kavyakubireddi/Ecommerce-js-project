@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    vertical-align: middle;
+    margin-top: 20px;
+    position: sticky;
+    background-color:white;
+    padding: 0 20px 0 20px;
+}
+.logo{
+    flex: 2;
+}
+.logo h1{
+    color: rgb(114, 18, 18);
+}
+.link{
+    flex: 2;
+    margin-top: 30px;
+}
+.link a{
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+.link a:hover{
+    color:rgb(114, 18, 18);
+}
+.user{
+    display: flex;
+}
+.user a{
+    padding: 10px;
+    margin-left: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    color:black;
+}
+.user a:hover{
+    color: rgb(114, 18, 18);
+}
+.user a i {
+    margin-right: 10px;
+}
