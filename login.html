@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="contactDetails">
+        <div class="heading">
+            <h1>Login</h1>
+        </div>
+        <hr>
+        <div class="form">
+            <div class="name">
+                <label for="Name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div class="email">
+                <label for="Email">Email</label><br>
+                <input type="text" placeholder="name@example.com">
+            </div>
+            <div>
+                New Here?<a href="register.html" target="_parent">Register</a>
+            </div>
+            <button>Login</button>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    <script>
+        fetch("header.html") 
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+    
+</body>
+
+</html>
